@@ -27,7 +27,7 @@ while(notDead):
     #     priorityChart.write(relation + "\n")
     #     priorityChart.seek(0) # this will put focus at top byte in file
     #     print(priorityChart.readlines())
-    twoRelFunc(relation)
+    two_rel_func(relation)
 
 
 

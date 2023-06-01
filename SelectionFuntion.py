@@ -7,20 +7,20 @@
 from RelationValueManipulationFunctions import *
 
 # This function below allows only two relations to be selected
-def twoRelFunc(relation):
+def two_rel_func(relation):
     """I think we will only need two choices, because
     even when it will have to make various choices, we can compare two at a time
     Exemple: ordering number array in acending order
     so, whenever, there are multiple chioce compare one on one, last one standing is selected"""
     if(relation == "choice"):
-        print("twoRelFunc() running")
+        print("two_rel_func() running")
         relOne = input("Give me option one: ")
         relTwo = input("Give me option two: ")
-        if(findRelValue(relOne) > findRelValue(relTwo)):
+        if(get_rel_value(relOne) > get_rel_value(relTwo)):
             print(f"I want { relOne }")
-        if(findRelValue(relOne) < findRelValue(relTwo)):
+        if(get_rel_value(relOne) < get_rel_value(relTwo)):
             print(f"I want { relTwo }")
-        if(findRelValue(relOne) == findRelValue(relTwo)):
+        if(get_rel_value(relOne) == get_rel_value(relTwo)):
             print("Is it possible to have to relations with exact same values?")
             print("Not in this small version, but humans are always making judgements")
             print("Can be based on anything, but let this == if statement be here")

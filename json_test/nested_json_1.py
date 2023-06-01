@@ -9,5 +9,7 @@ with open('test_JSON.json', 'r') as openfile:
 # Reading from json file
     json_object = json.load(openfile)
 print(json_object["apple"])
+print(json_object["apple"]["value"])
+print(json_object["apple"]["counter"])
 print(type(json_object["apple"]))
 print(type(json_object))

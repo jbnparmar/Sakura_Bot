@@ -1,0 +1,13 @@
+I know, I'm bracking few naming conventions in python
+but please bear with it.
+
+To simplify, every package name is in PascalCase
+exemple: RelationValueManipulationFunctions.py
+
+and for method names, use underscore "_" to
+separate every word
+exemple: get_rel_value()
+
+I have not used class in the framework
+but, it will be same, we use PascalCase for class name
+and underscore for method and function names
