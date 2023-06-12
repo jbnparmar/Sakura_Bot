@@ -1,2 +1,7 @@
 __pycache__/
 
+venv/lib/python3.10/site-packages/pip/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_internal/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_vendor/__pycache__/
