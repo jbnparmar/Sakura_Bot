@@ -16,20 +16,15 @@ def two_rel_func(relation):
         print("two_rel_func() running")
         relOne = input("Give me option one: ")
         relTwo = input("Give me option two: ")
-        try:
-            if(get_rel_value(relOne) > get_rel_value(relTwo)):
-                print(f"I want { relOne }")
-            if(get_rel_value(relOne) < get_rel_value(relTwo)):
-                print(f"I want { relTwo }")
-            if(get_rel_value(relOne) == get_rel_value(relTwo)):
-                print("Is it possible to have to relations with exact same values?")
-                print("Not in this small version, but humans are always making judgements")
-                print("Can be based on anything, but let this == if statement be here")
-                print("Because, one day... this might be become a reality")
-                print("Only people with absolute and universally big reality will understand")
-                print("what truly means to have something with same value")
-                print("UPDATE: read Theory of cat and dog, to reconsider this")
-        except TypeError as te:
-            print("\n\ntwo_rel_func() failed")
-            print("reasons that trigger this warning:")
-            print("Entered relation name might not exist in relation bucket")
+        if(get_rel_value(relOne) > get_rel_value(relTwo)):
+            print(f"I want { relOne }")
+        if(get_rel_value(relOne) < get_rel_value(relTwo)):
+            print(f"I want { relTwo }")
+        if(get_rel_value(relOne) == get_rel_value(relTwo)):
+            print("Is it possible to have to relations with exact same values?")
+            print("Not in this small version, but humans are always making judgements")
+            print("Can be based on anything, but let this == if statement be here")
+            print("Because, one day... this might be become a reality")
+            print("Only people with absolute and universally big reality will understand")
+            print("what truly means to have something with same value")
+            print("UPDATE: read Theory of cat and dog, to reconsider this")
