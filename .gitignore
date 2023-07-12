@@ -1,2 +1,23 @@
 __pycache__/
 
+venv/lib/python3.10/site-packages/pip/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_internal/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_internal/operations/build/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_internal/operations/install/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_vendor/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_vendor/cachecontrol/caches/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_vendor/rich/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_vendor/urllib3/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_vendor/urllib3/contrib/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_vendor/urllib3/packages/__pycache__/
+
+venv/lib/python3.10/site-packages/pip/_vendor/urllib3/util/__pycache__/

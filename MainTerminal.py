@@ -12,7 +12,6 @@ print("-------------------------------------------")
 
 from RelationValueManipulationFunctions import *
 from SelectionFuntion import *
-import gettext
 
 notDead = True
 
