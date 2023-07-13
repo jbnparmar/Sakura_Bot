@@ -22,8 +22,18 @@ class Relation:
         return self.dict[rel]
 
     def add_rel(self, rel_name, rel_value, rel_count):
-        """Method an also be used to update value and count of any relation"""
+        """Method an also be used to update value and count of any relation
+            it think, I should leave counter for later
+            because having a counter means, that bot can know repetation or cycles
+        """
+        dict_to_be_added = { rel_name: { "value": rel_value, "count": rel_count } }
+        self.dict.update(dict_to_be_added)
         with open(self.bucket_name, "w") as f:
-            dict_to_be_added = { rel_name: { "value": rel_value, "count": rel_count } }
-            self.dict.update(dict_to_be_added)
+            f.write(json.dumps(self.dict))
+
+    def add_rel_i_rel(self, rel_name, rel_rel_name, rel_rel_value):
+        """Name, add relation in relation method"""
+        dict_to_be_added = { rel_rel_name: rel_rel_value }
+        self.dict[rel_name].update(dict_to_be_added)
+        with open(self.bucket_name, "w") as f:
             f.write(json.dumps(self.dict))
