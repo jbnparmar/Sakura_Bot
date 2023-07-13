@@ -6,4 +6,7 @@ def import_test():
 class Relation:
     def __init__(self, bucket_name):
         self.bucket_name = bucket_name
-        self.dict = open(self.bucket_name, "a")
+        self.dict = ""
+        with open(self.bucket_name, "a") as f:
+            self.dict 
+
